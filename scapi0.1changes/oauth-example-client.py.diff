@@ -1,0 +1,14 @@
+10c10
+< SERVER = 'sandbox-soundcloud.com'
+---
+> SERVER = 'soundcloud.com'
+21,22c21,22
+< CONSUMER_KEY    = 'JysXkO8ErA4EluFnF5nWg'
+< CONSUMER_SECRET = 'fauVjm61niGckeufkmMvgUo77oWzRHdMmeylJblHk'
+---
+> CONSUMER_KEY    = 'your CONSUMER_KEY here'
+> CONSUMER_SECRET = 'your CONSUMER_SECRET here'
+127a128,130
+>     items = oauth_request.parameters.items()   
+>     print "BROWSER PASTE THIS : " + client.access_token_url + "?" + '&'.join('%s=%s' % (str(k), str(p)) for k, p in items)
+> 

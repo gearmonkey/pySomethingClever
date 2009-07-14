@@ -1,0 +1,21 @@
+47c47
+< REQUEST_TOKEN_URL = 'http://api.sandbox-soundcloud.com/oauth/request_token'
+---
+> REQUEST_TOKEN_URL = 'http://api.soundcloud.com/oauth/request_token'
+51c51
+< ACCESS_TOKEN_URL = 'http://api.sandbox-soundcloud.com/oauth/access_token'
+---
+> ACCESS_TOKEN_URL = 'http://api.soundcloud.com/oauth/access_token'
+55c55
+< AUTHORIZATION_URL = 'http://api.sandbox-soundcloud.com/oauth/authorize'
+---
+> AUTHORIZATION_URL = 'http://api.soundcloud.com/oauth/authorize'
+391c391,396
+< 
+---
+>         if "q" in kwargs:
+>             q = kwargs.pop("q")
+>             queryparams['q'] = q
+>         if "order" in kwargs:
+>             order = kwargs.pop("order")
+>             queryparams['order'] = order     	
